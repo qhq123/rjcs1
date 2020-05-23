@@ -5,7 +5,8 @@ import org.testng.annotations.DataProvider;
 public class input2Test {
   @Test(dataProvider = "dp")
   public void f(int select, String weight,int re) {
-	  Caculator caculator=new Caculator();
+	  System.setProperty("java.awt.headless", "false");
+  	  Caculator caculator=new Caculator();
 	  int re2=caculator.input2re(select,weight);
 	  Assert.assertEquals(re2, re);
   }
