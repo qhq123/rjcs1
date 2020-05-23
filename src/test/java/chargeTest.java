@@ -11,6 +11,7 @@ public class chargeTest {
   public void f(int line,int passager,int seat,String prices, 
 		  ArrayList<SpeLuggage> speluglist,ArrayList<Luggage>luglist,float re
 			  ) {
+		  System.setProperty("java.awt.headless", "false");
 		  Caculator caculator=new Caculator();
 		  float re1=caculator.checkticket(line, passager, seat, prices, speluglist, luglist);
 		  Assert.assertEquals(re1, re);
