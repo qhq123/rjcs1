@@ -6,7 +6,7 @@ public class input2Test {
   @Test(dataProvider = "dp")
   public void f(int select, String weight,int re) {
 	  System.setProperty("java.awt.headless", "false");
-  	  Caculator caculator=new Caculator();
+  	  Cacu caculator=new Cacu();
 	  int re2=caculator.input2re(select,weight);
 	  Assert.assertEquals(re2, re);
   }

@@ -8,7 +8,7 @@ public class input1Test {
 		  String height, String weight,int re
 		  ) {
 	  System.setProperty("java.awt.headless", "false");
-	  Caculator caculator=new Caculator();
+	  Cacu caculator=new Cacu();
 	  int re1=caculator.input1re(length,width,height,weight);
 	  Assert.assertEquals(re1, re);
   }
