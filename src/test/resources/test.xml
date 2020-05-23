@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="First suite" verbose="1" >
+<test name = "test1" >
+   <classes>
+  <class name="chargeTest">
+      <methods>
+         <include name = "f" />
+      </methods>
+  </class>
+   </classes>
+</test>
+<test name = "test2" >
+   <classes>
+    <class name="input1Test">
+      <methods>
+         <include name = "f" />
+      </methods>
+  </class>
+   </classes>
+</test>
+<test name = "test3" >
+   <classes>
+    <class name="input2Test">
+      <methods>
+         <include name = "f" />
+      </methods>
+  </class>
+   </classes>
+</test>
+</suite>
